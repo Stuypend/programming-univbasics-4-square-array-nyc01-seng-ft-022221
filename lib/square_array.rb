@@ -1,8 +1,5 @@
 def square_array(array)
   sq = Array.new
-  array.length.times {
-    |index|
-    sq.push(array[index]*array[index])
-  }
+  array.length.times do {|a| sq.push(array[a]^2) }
   return sq
 end
